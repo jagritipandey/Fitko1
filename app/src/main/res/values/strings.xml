@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fitko</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_schedule">Home</string>
+    <string name="action_update">Update</string>
+    <string name="title_activity_workout">Workout</string>
+    <string name="title_Trainer_View">Trainer View</string>
+    <string name="action_workout">workout</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_closed">drawer_closed</string>
+    <string name="title_activity_healthprofile">Health Profile</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_goals">Goals</string>
+    <string name="title_activity_diet">Diet</string>
+    <string name="feedbackemail">Email</string>
+    <string name="feedbackname">Name</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string name="Occupation">Occupation</string>
+    <string name="occupation_prompt">Choose an occupation</string>
+    <string-array name="occupation_arrays">
+        <item>Student</item>
+        <item>Service</item>
+        <item>Unemployed</item>
+        <item>Self-Occupied</item>
+    </string-array>
+
+    <string name="PhyActivity">Physical Activity</string>
+    <string name="PhyActivity_prompt">Choose a level</string>
+    <string-array name="PhyActivity_arrays">
+        <item>Sedentary</item>
+        <item>Moderate</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string name="Stress">Stess In Job</string>
+    <string name="Stress_prompt">Choose a Level</string>
+    <string-array name="Stress_arrays">
+        <item>Mild</item>
+        <item>Moderate</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string name="StressPersonal">Personal Stress</string>
+    <string name="StressPersonal_prompt">Choose a level</string>
+    <string-array name="StressPersonal_arrays">
+        <item>Mild</item>
+        <item>Moderate</item>
+        <item>Heavy</item>
+    </string-array>
+
+    <string name="AvgSleepHr">Average Hour Of Sleep</string>
+    <string name="SleepQty">Quality Of Sleep</string>
+    <string name="SleepTm">Time Of Sleep</string>
+
+    <string name="Smoke">Do you Smoke?</string>
+    <string name="Alcohol">Do You Consume Alcohol</string>
+    <string name="Tobacco">Do You Chew Tobacco</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
+    <string name="IfExercising"> Are (or) were you exercising?</string>
+
+    <string name="DaysExercising">Days per week ?</string>
+    <string name="DaysExercising_prompt">Choose an occupation</string>
+    <string-array name="DaysExercising_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="IntensityExercise">Level Of Intensity ?</string>
+
+    <string name="occupation_header">Occupation</string>
+    <string name="Sleep_header">Sleep</string>
+    <string name="Habbit_header">Habbits</string>
+    <string name="Exercise_header">Exercise</string>
+
+
+    <string name="userName">Name</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="PaymentStatus">Payment Status</string>
+    <string name="ExerciseList">Exercise List</string>
+    <string name="title_activity_payment_status">PaymentStatus</string>
+</resources>

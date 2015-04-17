@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sugoilabs.fitko.Schedule">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/scheduleHolderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right|top">
+
+                <LinearLayout
+                    android:id="@+id/TimeStamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="16dp"
+                    android:paddingLeft="16dp">
+
+                    <ImageView
+                        android:id="@+id/scheduleDateIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_go_to_today"
+                        android:layout_gravity="center"
+                        android:paddingRight="8dp"/>
+
+                    <TextView
+                        android:id="@+id/todayDayDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Wednessday, Jan 22"
+                        android:textColor="#212121"
+                        android:paddingTop="4dp"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingLeft="22dp"
+                        android:text="Workout"
+                        android:textColor="#212121"
+                        android:paddingTop="8dp"
+                        android:background="#CCC"/>
+
+
+                    <ListView
+                        android:id="@+id/excerciseListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:divider="#B6B6B6"
+                        android:dividerHeight="1sp"
+                        android:layout_weight="3"></ListView>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingLeft="22dp"
+                        android:text="Instructions"
+                        android:textColor="#212121"
+                        android:layout_marginTop="8dp"
+                        android:paddingTop="8dp"
+                        android:background="#CCC"/>
+
+                    <ListView
+                        android:id="@+id/instructionListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:divider="#B6B6B6"
+                        android:dividerHeight="1sp"
+                        android:layout_weight="1"></ListView>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/atttendanceButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/login_button_background"
+                android:text="View Workout and Mark Attendance"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="#ffffff">
+                <!-- android:background="@drawable/login_background"  -->
+                <!--  android:background="@android:drawable/list_selector_background" -->
+            </Button>
+
+
+
+        </FrameLayout>
+
+
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="com.sugoilabs.fitko.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer"></fragment>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>
