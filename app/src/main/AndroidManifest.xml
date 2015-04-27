@@ -78,6 +78,10 @@
             android:name=".PaymentStatus"
             android:label="@string/title_activity_payment_status" >
         </activity>
+        <activity
+            android:name=".Tips"
+            android:label="@string/title_activity_tips" >
+        </activity>
     </application>
 
 </manifest>

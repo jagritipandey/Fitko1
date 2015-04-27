@@ -88,4 +88,5 @@
     <string name="PaymentStatus">Payment Status</string>
     <string name="ExerciseList">Exercise List</string>
     <string name="title_activity_payment_status">PaymentStatus</string>
+    <string name="title_activity_tips">Tips</string>
 </resources>
