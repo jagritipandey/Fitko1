@@ -80,7 +80,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="40"
+                    android:text="0"
                     android:id="@+id/button"
                     android:textSize="30dp"
                     android:layout_weight="1"
@@ -104,7 +104,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="30"
+                    android:text="0"
                     android:id="@+id/button2"
                     android:textSize="30dp"
                     android:layout_weight="1"
@@ -128,7 +128,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20"
+                    android:text="0"
                     android:id="@+id/button3"
                     android:textSize="30dp"
                     android:layout_weight="1"
