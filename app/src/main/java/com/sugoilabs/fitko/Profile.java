@@ -67,7 +67,7 @@ public class Profile extends ActionBarActivity {
 
         AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
         helpBuilder.setTitle("Motivation");
-        helpBuilder.setMessage("You can do it!!");
+        helpBuilder.setMessage("Fit is no!!");
         helpBuilder.setPositiveButton("Ok",
                 new DialogInterface.OnClickListener() {
 

@@ -41,9 +41,9 @@ public class Diet extends ActionBarActivity {
         rb1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbutton.setText("40");
-                mbutton.setText("30");
-                pbutton.setText("20");
+                nbutton.setText("40 Cal");
+                mbutton.setText("30 Cal");
+                pbutton.setText("20 Cal");
                 txt.setText("90");
             }
         });
@@ -51,7 +51,7 @@ public class Diet extends ActionBarActivity {
         rb2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nbutton.setText("60");
+                nbutton.setText("60 Cal");
                 mbutton.setText("40");
                 pbutton.setText("30");
                 txt.setText("130");

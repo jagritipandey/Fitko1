@@ -77,7 +77,7 @@ public class HealthProfile extends ActionBarActivity {
 
         AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
         helpBuilder.setTitle("Motivation");
-        helpBuilder.setMessage("You can do it!!");
+        helpBuilder.setMessage("Sore? Tired? Out of breath? Sweaty? GOOD!! ITS WORKING!");
         helpBuilder.setPositiveButton("Ok",
                 new DialogInterface.OnClickListener() {
 
