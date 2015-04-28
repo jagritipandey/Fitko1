@@ -82,6 +82,10 @@
             android:name=".Tips"
             android:label="@string/title_activity_tips" >
         </activity>
+        <activity
+            android:name=".CalorieCalculator"
+            android:label="@string/title_activity_calorie_calculator" >
+        </activity>
     </application>
 
 </manifest>

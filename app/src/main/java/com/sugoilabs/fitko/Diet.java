@@ -1,5 +1,10 @@
 package com.sugoilabs.fitko;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,9 +13,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Diet extends ActionBarActivity {
+
+
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +68,97 @@ public class Diet extends ActionBarActivity {
 
             }
         });
+
+
+
+        nbutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Breakfast:Eggs, cornflakes, fruits", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+
+
+        mbutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Lunch:Boiled vegetables, roti, steamed meat", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+
+
+
+        pbutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(getApplicationContext(),
+                        "Dinner:Salad, Soup, Bread", Toast.LENGTH_LONG).show();
+
+
+            }
+        });
+
+
+
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector();
+        mShakeDetector.setOnShakeListener(new ShakeDetector.OnShakeListener() {
+
+            @Override
+            public void onShake(int count) {
+
+                showSimplePopUp();
+            }
+        });
+
+
     }
+
+
+    //Pause and Resume for Shake
+    @Override
+    public void onResume() {
+        super.onResume();
+        mSensorManager.registerListener(mShakeDetector, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onPause() {
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
+    }
+
+    private void showSimplePopUp() {
+
+        AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
+        helpBuilder.setTitle("Motivation");
+        helpBuilder.setMessage("You can do it!!");
+        helpBuilder.setPositiveButton("Ok",
+                new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Do nothing but close the dialog
+                    }
+                });
+
+        // Remember, create doesn't show the dialog
+        AlertDialog helpDialog = helpBuilder.create();
+        helpDialog.show();
+    }
+
 
 
     @Override

@@ -81,8 +81,8 @@ public class NavigationDrawerFragment extends Fragment implements RecyclerViewNa
     public static List<RecyclerViewNavigationItem> getData() {
         List<RecyclerViewNavigationItem> items = new ArrayList<>();
         //Icons from icons8.com
-        int[] icons = {R.drawable.schedule, R.drawable.ic_health, R.drawable.profile, R.drawable.goal, R.drawable.diet, R.drawable.paymentstatus};
-        String[] title = {"Home", "Health Data", "Profile", "Goal", "Diet", "Payment Status"};
+        int[] icons = {R.drawable.schedule, R.drawable.ic_health, R.drawable.profile, R.drawable.goal, R.drawable.diet, R.drawable.paymentstatus, R.drawable.tips, R.drawable.caloriecal};
+        String[] title = {"Home", "Health Data", "Profile", "Goal", "Diet", "Payment Status", "Tips", "Calorie Calculator"};
         for (int i = 0; i < icons.length && i < title.length; i++) {
             RecyclerViewNavigationItem item = new RecyclerViewNavigationItem();
             item.iconid = icons[i];
@@ -109,6 +109,12 @@ public class NavigationDrawerFragment extends Fragment implements RecyclerViewNa
         }
         if (position == 5) {
             startActivity(new Intent(getActivity(), PaymentStatus.class));
+        }
+        if (position == 6) {
+            startActivity(new Intent(getActivity(), Tips.class));
+        }
+        if (position == 7) {
+            startActivity(new Intent(getActivity(), CalorieCalculator.class));
         }
     }
 }
